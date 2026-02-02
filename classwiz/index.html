@@ -1,0 +1,157 @@
+<html>
+
+<head>
+
+    <title>Ecommerce Product Website - Easy Tutorials</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+	<header>
+
+    <img src="images/logo.png" height="27" width="96">
+
+    <nav class="navbar">
+        <a class="active" href="#home">Home</a>
+        <a href="#Product">Product</a>
+        <a href="#about">About</a>
+        <a href="#Tutorial">Tutorial</a>
+        <a href="#order">Order</a>
+    </nav>
+
+
+</header>
+
+<form action="" id="search-form">
+    <input type="search" placeholder="search here..." name="" id="search-box">
+    <label for="search-box" class="fas fa-search"></label>
+    <i class="fas fa-times" id="close"></i>
+</form>
+
+
+    <div class="hero">
+        <div class="row">
+            <div class="col">
+
+                <div class="slider">
+                    <div class="product">
+
+                        <img src="images/item1.jpg" alt="" onclick="clickme(this)">
+                        <img src="images/product2.jpg" alt="" onclick="clickme(this)">
+                        
+
+                    </div>
+                    <div class="preview">
+                        <img src="images/item1.jpg" id="imagebox" alt="">
+                    </div>
+                </div>
+
+            </div>
+            <div class="col">
+
+                <div class="content">
+                    <p class="brand">Brand: Casio</p>
+                    <h2>Casio Scientific fx-991ES ClassWiz Edition</h2>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <p class="price">Price: ৳১৫৫০</p>
+                    
+                    <p>Quantity: <input type="text" value="1"></p>
+                    <button type="button">
+                        <i class="fa fa-shopping-cart"></i>
+                        Add to cart</button>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="related">
+            <h2>related items</h2>
+            <div class="row">
+                <div class="columns">
+                    <div class="items">
+                       <a href="D:\DOWNLOAD\Compressed\ProjectHPC\Project\fx82\index.html"> <img src="images/fx82.webp" alt=""></a>
+                        <div class="details">
+                            <p>Casio Scientific Calculator (fx-82 EX)</p>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-o"></i>
+                            </div>
+
+                            <p>৳১৩০০</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="columns">
+                    <div class="items">
+                        <img src="images/item2.jpg" alt="">
+                        <div class="details">
+                            <p>Casio Calculator Sl-310Uc</p>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-o"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+
+                            <p>৳৪৭০</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="columns">
+                    <div class="items">
+                        <img src="images/item3.jpg" alt="">
+                        <div class="details">
+                            <p>Casio Programmable Calculator FX-5800P</p>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+
+                            <p>৳৬৪০০</p>
+
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+
+    <script>
+        function clickme(smallImg) {
+
+            var fullImg = document.getElementById("imagebox");
+            fullImg.src = smallImg.src;
+
+        }
+
+    </script>
+
+
+
+</body>
+
+</html>
